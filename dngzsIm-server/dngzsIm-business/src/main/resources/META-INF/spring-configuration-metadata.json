@@ -1,0 +1,10 @@
+{
+  "properties": [
+    {
+      "name": "netty.port",
+      "type": "java.lang.Integer",
+      "description": "netty port",
+      "sourceType": "com.dngzs.core.properties.NettyProperties"
+    }
+  ]
+}
