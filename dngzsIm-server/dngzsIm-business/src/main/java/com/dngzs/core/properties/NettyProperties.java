@@ -3,6 +3,12 @@ package com.dngzs.core.properties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
+/**
+ * netty配置类
+ *
+ * @author zhangbo
+ *
+ */
 @ConfigurationProperties(prefix = "netty")
 @Component
 public class NettyProperties {

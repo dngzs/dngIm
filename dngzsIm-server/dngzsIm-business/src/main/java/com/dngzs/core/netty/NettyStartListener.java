@@ -7,6 +7,11 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
+/**
+ * spring容器完成事件，用来启动netty
+ *
+ * @author zhangbo
+ */
 @Component
 public class NettyStartListener implements ApplicationListener<ContextRefreshedEvent> {
 

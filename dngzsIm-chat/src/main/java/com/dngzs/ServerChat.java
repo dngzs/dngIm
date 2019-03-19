@@ -1,6 +1,6 @@
 package com.dngzs;
 
-import com.dngzs.handler.nettyPipline;
+import com.dngzs.handler.nettyPipeline;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
@@ -38,7 +38,7 @@ public class ServerChat implements AutoCloseable{
             boss = new NioEventLoopGroup(1);
             worker = new NioEventLoopGroup();
             ServerBootstrap bootstrap = new ServerBootstrap();
-            bootstrap.group(boss,worker).channel(NioServerSocketChannel.class).childHandler(new nettyPipline());
+            bootstrap.group(boss,worker).channel(NioServerSocketChannel.class).childHandler(new nettyPipeline());
             bootstrap.bind(port);
             LOG.info("netty 启动在8888端口");
         }finally {
